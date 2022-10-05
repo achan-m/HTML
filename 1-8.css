@@ -1,0 +1,57 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+main{
+  width:960px;
+  margin:50px auto;
+}
+/*50px autoを設定したら中央に揃ったけど、autoの効果？「0 auto」が中央に来るんじゃなかったの？*/
+
+.item-list{
+  margin-bottom:50px;
+}
+
+.item-content{
+  padding:20px;
+  list-style:none;
+}
+
+.item-content:nth-child(odd){
+  background-color:#eee;
+}
+
+.box-list{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.main-box{
+  height:200px;
+  width:30%;
+  margin-right:5%;
+  margin-bottom:40px;
+  background-color:#ffd700;
+}
+
+.main-box:nth-child(1),
+.main-box:nth-child(5),
+.main-box:nth-child(9){
+  background-color:#ff8c00;
+}
+
+.main-box:nth-child(3),
+.main-box:nth-child(6),
+.main-box:nth-child(9){
+  margin-right:0;
+}
+
+.main-box:nth-child(7),
+.main-box:nth-child(8),
+.main-box:nth-child(9){
+  margin-bottom:0
+}
+
+/*上の45〜55行はもっと端的に書くことできる？*/
